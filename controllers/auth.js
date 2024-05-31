@@ -22,6 +22,7 @@ export const login = async (req, res) => {
         );
         res.status(200).json({ result: newUser, token });
       } catch (error) {
+        console.log(error);
         res.status(500).json({ mess: "something Went Wrong...." });
       }
     }
@@ -39,6 +40,7 @@ export const login = async (req, res) => {
           res.status(200).json({ result: existingUser, token });
     }
   } catch (error) {
+       console.log(error)
         res.status(500).json({ mess:"something went wrong...."})
   }
 };
