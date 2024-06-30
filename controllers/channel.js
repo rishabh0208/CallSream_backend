@@ -39,6 +39,7 @@ export const getAllChannels = async (req, res) => {
         name: channel.name,
         email: channel.email,
         desc: channel.desc,
+        points:channel.points,
       });
         
     });

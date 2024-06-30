@@ -9,5 +9,5 @@ routes.patch('/update/:id',updateChannelData)
 routes.get('/getAllChannels',getAllChannels)
 
 routes.post('/points', pointsController);
-
+// routes.patch('/user',pointsController);
 export default routes;
