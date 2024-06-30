@@ -40,7 +40,6 @@ server.listen(PORT, () => {
   console.log("server running");
 });
 
-// Define socket-related logic here
 const emailToSocketIdMap = new Map();
 const socketidToEmailMap = new Map();
 io.on("connection", (socket) => {
